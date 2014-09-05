@@ -1,0 +1,6 @@
+Skeleton project for Apigee-127
+
+## A-127 API that calls the Yahoo Weather API
+
+### Usage
+ curl http://localhost:10010/forecastrss?w=12797282
