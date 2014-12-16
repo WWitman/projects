@@ -8,16 +8,16 @@ For each release tag in a repository, we list the commit messages.
 
 ## Example
 
-The look like this:
+The look kind of like this, with a heading, a list of release numbers/dates, and commits for each release:
 
-# apigee-127/a127
+### apigee-127/a127
 
-## v0.9.2 - 2014-11-10
+#### v0.9.2 - 2014-11-10
 
 * set a127-magic version in template
 * 0.9.2
 
-## v0.9.1 - 2014-10-19
+#### v0.9.1 - 2014-10-19
 
 * fix test
 * update x-volos tags to new x-127 syntax
