@@ -8,7 +8,7 @@ For each release tag in a repository, we list the commit messages.
 
 ## What do they look like?
 
-The look kind of like this, with a heading, a list of release numbers/dates, and commits for each release:
+The release notes are formatted like this, with a heading, a list of release numbers/dates, and commits for each release:
 
 ### apigee-127/a127
 
