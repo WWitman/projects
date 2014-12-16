@@ -88,6 +88,8 @@ The tool generates release notes for repositories that have release tags. If a r
 
     ``` sh $ curl -i 'http://localhost:10010/repos/apigee-127/magic/release_notes
 
+        # apigee-127/magic
+
         ## v0.7.0 - 2014-11-8
 
         * update to work with swagger-tools 0.7 async interface

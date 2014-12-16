@@ -107,6 +107,7 @@ function getNotes(req, res) {
           utils.writeTitle(owner, repo);
       }
       if (jsonData.length >0) {
+          res.write("# " + owner + "/" + repo + "\n\n");
           doCompare(0, jsonData, res, error);
       } else {
           console.log("NO RELEASE TAGS DETECTED FOR: " + repo);  
