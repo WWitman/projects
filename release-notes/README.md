@@ -11,15 +11,15 @@ For each release tag in a repository, we list the commit messages.
 1. Copy `./config/secrets-sample.js` to `./config/secrets.js`. 
 2. Edit `./config.secrets.js` with your GitHub information as follows:
 
-```json
-        exports.user = {
+    ```
+            exports.user = {
 
-           username: 'Your GitHub username',
-           password: 'Your GitHub password',
-           agent: "Arbitrary string -- typically your GitHub username"
+               username: 'Your GitHub username',
+               password: 'Your GitHub password',
+               agent: "Arbitrary string -- typically your GitHub username"
 
-};
-```
+    };
+    ```
 
 3. Save the file.
 
@@ -41,10 +41,10 @@ The tool generates release notes for repositories that have release tags. If a r
     ```
 
 
-2. For an owner, get a list of repos. So, for owner `apigee-127`, you do:
+2. For an owner, get a list of repos. These are the repository names that you can generate release notes for. So, for owner `apigee-127`, you do:
 
     ``` sh
-        $ curl -i http://localhost:10010/repos/apigee-127`
+        $ curl -i http://localhost:10010/repos/apigee-127
         {
           "0": "apigee-127/a127",
           "1": "apigee-127/a127-documentation",
@@ -64,11 +64,9 @@ The tool generates release notes for repositories that have release tags. If a r
         }
     ```
 
-So, this returns `owner/repository`. These are the repository names that you can generate release notes for.
-
 3. Generate release notes for a given repository. This example just returns them to your client, in `.md` format. You can also save to a file and you can control how many releases to generate notes for. See the API section below.
 
-    curl -i 'http://localhost:10010/repos/apigee-127/magic/release_notes
+    `curl -i 'http://localhost:10010/repos/apigee-127/magic/release_notes`
 
 ## TODO
 
@@ -104,21 +102,21 @@ URI: `/repos/{owner}/{repo}/release_notes`
 
 Outputs release notes in `.md` format to the response for the specified repository. You also have the option of writing the release notes directly to a file by specifying the `save` query parameter. 
 
-**Query parameters: **
+**Query parameters:**
 
 * depth - (optional) Specifies the number of release tags to generate release notes for. Default: 10.
 * save - (optional) If "true", the release notes will be saved to `./relnotes/RELEASE_NOTES-<repo-name>.md`. Default: false. 
 
-**Examples: **
+**Examples:**
 
 Returns release notes for the most recent 20 release tags back to the client:
 
-curl -i 'http://localhost:10010/repos/apigee-127/magic/release_notes?depth=20
+    `curl -i 'http://localhost:10010/repos/apigee-127/magic/release_notes?depth=20`
 
 
 Saves release notes for the most recent 5 release tags in a file:
 
-curl -i 'http://localhost:10010/repos/apigee-127/magic/release_notes?depth=5&save=true'
+    `curl -i 'http://localhost:10010/repos/apigee-127/magic/release_notes?depth=5&save=true'`
 
 
 
