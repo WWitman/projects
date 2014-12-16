@@ -1,0 +1,28 @@
+{
+  "name": "release-notes",
+  "version": "0.0.1",
+  "private": "true",
+  "description": "Generates release notes for Apigee-127 GitHub repositories.",
+  "keywords": [],
+  "author": "",
+  "license": "",
+  "main": "app.js",
+  "dependencies": {
+    "express": "3.x.x",
+    "prompt": "",
+    "request": "",
+    "a127-magic": "",
+  },
+  "devDependencies": {
+    "should": "3.1.x"
+  },
+  "scripts": {
+    "start": "node app.js"
+  },
+  "api": {
+    "name": "release-notes",
+    "basePath": "/release-notes",
+    "docsPath": "/docs",
+    "main": "app.js"
+  }
+}
