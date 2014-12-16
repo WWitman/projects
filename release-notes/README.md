@@ -6,6 +6,26 @@ Generates release notes for GitHub repositories.
 
 For each release tag in a repository, we list the commit messages. 
 
+## Example
+
+The look like this:
+
+# apigee-127/a127
+
+## v0.9.2 - 2014-11-10
+
+* set a127-magic version in template
+* 0.9.2
+
+## v0.9.1 - 2014-10-19
+
+* fix test
+* update x-volos tags to new x-127 syntax
+* nail down versions, version for release
+* checking for different status code for monetization enabled org
+* Merge pull request #22 from apigee-127/monetization-enabled-org-patch
+
+
 ## Configuration
 
 1. Copy `./config/secrets-sample.js` to `./config/secrets.js`. 
@@ -68,11 +88,6 @@ The tool generates release notes for repositories that have release tags. If a r
 
     `curl -i 'http://localhost:10010/repos/apigee-127/magic/release_notes`
 
-## TODO
-
-* Choose to only return repos that have release tags associated with them.
-* Choose to only return repos that do not have release tags. 
-* Allow user to generate one big release note output/file for all repos associated with an owner. If a repo doesn't have any release tags, output that message. 
 
 ## API
 
@@ -111,12 +126,19 @@ Outputs release notes in `.md` format to the response for the specified reposito
 
 Returns release notes for the most recent 20 release tags back to the client:
 
-    `curl -i 'http://localhost:10010/repos/apigee-127/magic/release_notes?depth=20`
+    ```curl -i 'http://localhost:10010/repos/apigee-127/magic/release_notes?depth=20```
 
 
 Saves release notes for the most recent 5 release tags in a file:
 
-    `curl -i 'http://localhost:10010/repos/apigee-127/magic/release_notes?depth=5&save=true'`
+    ```curl -i 'http://localhost:10010/repos/apigee-127/magic/release_notes?depth=5&save=true'```
+
+
+## TODO
+
+* Choose to only return repos that have release tags associated with them.
+* Choose to only return repos that do not have release tags. 
+* Allow user to generate one big release note output/file for all repos associated with an owner. If a repo doesn't have any release tags, output that message. 
 
 
 
