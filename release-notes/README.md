@@ -86,7 +86,8 @@ The tool generates release notes for repositories that have release tags. If a r
 
 3. Generate release notes for a given repository. This example just returns them to your client, in `.md` format. You can also save to a file and you can control how many releases to generate notes for. See the API section below.
 
-    ``` sh $ curl -i 'http://localhost:10010/repos/apigee-127/magic/release_notes
+    ``` sh 
+        $ curl -i 'http://localhost:10010/repos/apigee-127/magic/release_notes
 
         # apigee-127/magic
 
@@ -98,7 +99,6 @@ The tool generates release notes for repositories that have release tags. If a r
 
         ...
     ```
-
 
 
 ## API
