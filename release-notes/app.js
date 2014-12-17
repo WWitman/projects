@@ -7,6 +7,10 @@ var app = express();
 // uncomment the following if you need to parse incoming form data
 //app.use(express.bodyParser());
 
-app.use(a127.middleware());
-app.listen(process.env.PORT || 10010);
+a127.init(function(config) {
+  app.use(a127.middleware(config));
+
+  app.listen(process.env.PORT || 10010);
+
+});
 
