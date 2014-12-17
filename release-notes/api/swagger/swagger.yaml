@@ -23,8 +23,6 @@ paths:
   /owners:
     # binds a127 app logic to a route
     x-swagger-router-controller: owners 
-    x-a127-authorizations: {}
-    x-a127-apply: {}
     get:
       description: Shows a list of github repo owners of interest to us
       # used as the method name of the controller
@@ -34,79 +32,75 @@ paths:
           description: Success
           schema:
             # a pointer to a definition
-            $ref: OwnersResponse
+            $ref: "#/definitions/OwnersResponse"
         # responses may fall through to errors
         default:
           description: Error
           schema:
-            $ref: ErrorResponse
+            $ref: "#/definitions/ErrorResponse"
   /repos/{owner}:
     # binds a127 app logic to a route
+    parameters:
+    - name: owner
+      in: path
+      description: The owner of the rep
+      required: true
+      type: string
     x-swagger-router-controller: repos 
-    x-a127-authorizations: {}
-    x-a127-apply: {}
     get:
       description: Returns the repos associated with the owner
       # used as the method name of the controller
       operationId: getRepos
-      parameters:
-        - name: owner
-          in: path
-          description: The owner of the rep
-          required: true
-          type: string
       responses:
         "200":
           description: Success
           schema:
             # a pointer to a definition
-            $ref: OwnersResponse
+            $ref: "#/definitions/OwnersResponse"
         # responses may fall through to errors
         default:
           description: Error
           schema:
-            $ref: ErrorResponse
-  repos/{owner}/{repo}/release_notes:
+            $ref: "#/definitions/ErrorResponse"
+  /repos/{owner}/{repo}/release_notes:
     # binds a127 app logic to a route
     x-swagger-router-controller: notes
-    x-a127-authorizations: {}
-    x-a127-apply: {}
+    parameters:
+      - name: owner
+        in: path
+        description: The git repo to query
+        required: true
+        type: string
+      - name: repo
+        in: path
+        description: The git repo to query
+        required: true
+        type: string
+      - name: depth
+        in: query
+        description: The number of releases to compare.
+        required: false
+        type: number
+      - name: save
+        in: query
+        description: xxxx
+        type: string
+        required: false
     get:
       description: Generates release notes for the specified repo 
       # used as the method name of the controller
       operationId: getNotes
-      parameters:
-        - name: owner 
-          in: path
-          description: The git repo to query 
-          required: false
-          type: string
-        - name: repo
-          in: path
-          description: The git repo to query
-          required: false
-          type: string
-        - name: depth
-          in: query
-          description: The number of releases to compare.
-          required: false
-          type: number
-        - name: save
-          in: query
-          description: xxxx
-          type: string
-          required: false
       responses:
         "200":
           description: Success
           schema:
             # a pointer to a definition
-            $ref: ReleaseNotesResponse
+            $ref: "#/definitions/ReleaseNotesResponse"
         # responses may fall through to errors
         default:
           description: Error
           schema:
-            $ref: ErrorResponse
+            $ref: "#/definitions/ErrorResponse"
 # complex objects have schema definitions
 definitions:
   OwnersResponse:
