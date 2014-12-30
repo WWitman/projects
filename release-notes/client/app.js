@@ -115,8 +115,7 @@ buildNotes(tagIndex);
 
 function processDependencies(body) {
 
- var jsonData = JSON.parse(body)
- var dependencies = jsonData.dependencies;
+ var dependencies = JSON.parse(body)
  var data = "";
 
  for (var i=0; i < a127_deps.length-1; i++) {
