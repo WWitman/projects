@@ -9,8 +9,9 @@ var a127_deps = require('../config/dependencies').a127_deps;
   }
 
 var account = "apigee-127";
-var repo = "swagger-tools";
+//var repo = "swagger-tools";
 //var repo = "a127";
+var repo = "magic";
 
 var tags = "";
 var tagObj = {};
