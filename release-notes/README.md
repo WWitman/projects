@@ -1,6 +1,10 @@
-# Apigee-127 release notes generator
+# GitHub release notes generator
 
 Generates release notes for GitHub repositories.
+
+## About this project
+
+The API is written using Apigee-127. A client app is provided that uses this API to build the release notes.
 
 ## What do the release notes look like?
 
