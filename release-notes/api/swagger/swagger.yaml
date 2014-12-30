@@ -1,14 +1,11 @@
 swagger: "2.0"
 info:
   version: "0.0.1"
-  title: A127 Release Notes App
-# during dev, should point to your local machine
+  title: An API for generating release notes for GitHub releases
 host: localhost
-# basePath prefixes all resource paths 
 basePath: /
 # 
 schemes:
-  # tip: remove http to make production-grade
   - http
   - https
 # format of bodies a client can send (Content-Type)
@@ -20,101 +17,180 @@ produces:
 x-a127-config: {}
 x-a127-services: {}
 paths:
-  /owners:
-    # binds a127 app logic to a route
-    x-swagger-router-controller: owners 
+  /accounts:
+    x-swagger-router-controller: accounts 
     get:
-      description: Shows a list of github repo owners of interest to us
-      # used as the method name of the controller
-      operationId: getOwners
+      description: Shows a list of github user accounts of interest to us
+      operationId: getAccounts
       responses:
         "200":
           description: Success
           schema:
-            # a pointer to a definition
-            $ref: "#/definitions/OwnersResponse"
-        # responses may fall through to errors
+            $ref: "#/definitions/AccountsResponse"
         default:
           description: Error
           schema:
             $ref: "#/definitions/ErrorResponse"
-  /repos/{owner}:
-    # binds a127 app logic to a route
+  /accounts/{account}/repos:
+    x-swagger-router-controller: repos
     parameters:
-    - name: owner
+    - name: account
       in: path
-      description: The owner of the rep
+      description: Returns information about a specific account
       required: true
       type: string
-    x-swagger-router-controller: repos 
     get:
-      description: Returns the repos associated with the owner
-      # used as the method name of the controller
+      description: Shows a list of github repositories associated with the account
       operationId: getRepos
       responses:
         "200":
           description: Success
           schema:
-            # a pointer to a definition
-            $ref: "#/definitions/OwnersResponse"
-        # responses may fall through to errors
+            $ref: "#/definitions/AccountsResponse"
         default:
           description: Error
           schema:
             $ref: "#/definitions/ErrorResponse"
-  /repos/{owner}/{repo}/release_notes:
-    # binds a127 app logic to a route
-    x-swagger-router-controller: notes
+  /accounts/{account}/repos/{repo}:
     parameters:
-      - name: owner
-        in: path
-        description: The git repo to query
-        required: true
-        type: string
-      - name: repo
-        in: path
-        description: The git repo to query
-        required: true
-        type: string
-      - name: depth
-        in: query
-        description: The number of releases to compare.
-        required: false
-        type: number
-      - name: save
-        in: query
-        description: xxxx
-        type: string
-        required: false
+    - name: account
+      in: path
+      description: Returns information about a specific account
+      required: true
+      type: string
+    - name: repo
+      in: path
+      description: The name of the git repository
+      type: string
+    x-swagger-router-controller: repos
     get:
-      description: Generates release notes for the specified repo 
-      # used as the method name of the controller
-      operationId: getNotes
+      description: Returns information about a specific git account
+      operationId: getRepo
       responses:
         "200":
           description: Success
           schema:
-            # a pointer to a definition
-            $ref: "#/definitions/ReleaseNotesResponse"
-        # responses may fall through to errors
+            $ref: "#/definitions/AccountsResponse"
+        default:
+          description: Error
+          schema:
+            $ref: "#/definitions/ErrorResponse"
+  /accounts/{account}/repos/{repo}/tags:
+    x-swagger-router-controller: tags
+    parameters:
+    - name: account
+      in: path
+      description: A specific account.
+      required: true
+      type: string
+    - name: repo
+      in: path
+      description: The name of the git repository
+      type: string
+    get:
+      description: Shows a list of tags associated with an repository.
+      operationId: getTags
+      responses:
+        "200":
+          description: Success
+          schema: 
+            $ref: "#/definitions/AccountsResponse"
+        default:
+          description: Error
+          schema:
+            $ref: "#/definitions/ErrorResponse"
+  /accounts/{account}/repos/{repo}/tags/{tag}:
+    parameters:
+    - name: account
+      in: path
+      description: A specific account.
+      required: true
+      type: string
+    - name: repo
+      in: path
+      description: The name of the git repository
+      type: string
+    - name: tag 
+      in: path
+      description: A tag number.
+      type: string
+    x-swagger-router-controller: tags
+    get:
+      description: Returns information about a specific git tag
+      operationId: getTag
+      responses:
+        "200":
+          description: Success
+          schema:
+            $ref: "#/definitions/AccountsResponse"
+        default:
+          description: Error
+          schema:
+            $ref: "#/definitions/ErrorResponse"
+  /accounts/{account}/repos/{repo}/tags/{tag}/dependencies:
+    parameters:
+    - name: account
+      in: path
+      description: Returns information about a specific account
+      required: true
+      type: string
+    - name: repo
+      in: path
+      description: The name of the git repository
+      type: string
+    - name: tag
+      in: path
+      description: The name of the git repository
+      type: string
+    x-swagger-router-controller: dependencies
+    get:
+      description: Returns information about a specific git tag
+      operationId: getDependencies
+      responses:
+        "200":
+          description: Success
+          schema:
+            $ref: "#/definitions/AccountsResponse"
+        default:
+          description: Error
+          schema:
+            $ref: "#/definitions/ErrorResponse"
+  /accounts/{account}/repos/{repo}/tags/{tag}/commits:
+    parameters:
+    - name: account
+      in: path
+      description: Returns information about a specific account
+      required: true
+      type: string
+    - name: repo
+      in: path
+      description: The name of the git repository
+      type: string
+    - name: tag
+      in: path
+      description: The name of the git repository
+      type: string
+    x-swagger-router-controller: tags
+    get:
+      description: Returns information about a specific git tag
+      operationId: getCommits
+      responses:
+        "200":
+          description: Success
+          schema:
+            $ref: "#/definitions/AccountsResponse"
         default:
           description: Error
           schema:
             $ref: "#/definitions/ErrorResponse"
 # complex objects have schema definitions
 definitions:
-  OwnersResponse:
+  AccountsResponse:
     owners:
       type: object
       properties:
         name:
           type: string
-  ReleaseNotesResponse:
-    required:
-      - message
-    properties:
-      message:
-        type: string
   ErrorResponse:
     required:
       - message
