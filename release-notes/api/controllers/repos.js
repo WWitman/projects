@@ -7,10 +7,9 @@ var fs = require('fs');
 var config = require('../../config/secrets').user;
 
 module.exports = {
-  getRepos: getRepos
+  getRepos: getRepos,
+  getRepo: getRepo
 }
-
-
 
 var options = {
    url: "",
@@ -24,33 +23,39 @@ var options = {
    }
 }
 
-
-// Gets a list of the repos associated with the owner. (not used currently)
+// Gets a list of the repos associated with an account.
 function getRepos(req, res) {
 
-  var outerData = "";
-  var owner = req.swagger.params.owner.value;
-
-  // Gets all the repos associated with an owner.
-  options.url = "https://api.github.com/users/" + owner + "/repos?per_page=100";
+  var account = req.swagger.params.account.value;
+  options.url = "https://api.github.com/users/" + account + "/repos";
 
   request(options, function (error, response, body) {
-    var data = {};
-    if (!error && response.statusCode == 200) {
-      var jsonData = JSON.parse(body)
-      for (var i=0; i<jsonData.length-1; i++) {
-          data[i] = jsonData[i].full_name;
-      }
-      res.send(data);
-      res.end();
-      outerData = data;
-      }
-    else {
-       console.log("ERROR: " + error);
-       console.log("STATUS: " + response.statusCode);
-       res.end();
+  var data = [];
+
+    if (error) {
+        res.send(error);
+    } else {
+        var jsonData = JSON.parse(body)
+        for (var i=0; i<jsonData.length; i++) {
+          data[i] = JSON.parse(body)[i].name;
+        }
+        res.send(data);
     }
   });
-  return outerData;
-};
+}
 
+function getRepo(req, res) {
+  var account = req.swagger.params.account.value;
+  var repo = req.swagger.params.repo.value;
+
+  options.url = "https://api.github.com/repos/" + account + "/" + repo;
+
+  request(options, function (error, response, body) {
+
+    if (error) {
+        res.send(error);
+    } else {
+        res.send(JSON.parse(body));
+    }
+  });
+}
