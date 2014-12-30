@@ -9,8 +9,6 @@ var utils = require('./utils');
 module.exports = {
   getTags: getTags,
   getTag: getTag,
-//  getVersion: getVersion,
- // getDate: getDate,
   getCommits: getCommits
 }
 
@@ -70,50 +68,6 @@ function getTag(req, res) {
   });
 };
 
-
-/*
-function getDate(req, res) {
-
-  var account = req.swagger.params.account.value;
-  var repo = req.swagger.params.repo.value;
-  var tag = req.swagger.params.tag.value;
-  options.url = base_url + "repos/" + account + "/"  + repo + "/git/tags/" + tag;
-
-  request(options, function (error, response, body) {
-    if (error) {
-       res.send(error);
-    } else {
-       var jsonData = JSON.parse(body)
-       if (jsonData) {
-          res.send(utils.formatDate(jsonData.tagger.date));
-       } else {
-          res.send("\nNO RELEASE TAG FOUND FOR: " + tag + "\n\n");
-       }
-    }
-  });
-};
-
-function getVersion(req, res) {
-
-  var account = req.swagger.params.account.value;
-  var repo = req.swagger.params.repo.value;
-  var tag = req.swagger.params.tag.value;
-  options.url = base_url + "repos/" + account + "/"  + repo + "/git/tags/" + tag;
-
-  request(options, function (error, response, body) {
-    if (error) {
-       res.send(error);
-    } else {
-       var jsonData = JSON.parse(body)
-       if (jsonData) {
-          res.send(jsonData.tag);
-       } else {
-          res.send("\nNO RELEASE TAG FOUND FOR: " + tag + "\n\n");
-       }
-    }
-  });
-};
-*/
 
 // Gets commits between two tags.
 function compareTags(i, jsonData,  tagIndex, account, repo, res)  {
