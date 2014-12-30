@@ -10,8 +10,8 @@ var a127_deps = require('../config/dependencies').a127_deps;
 
 var account = "apigee-127";
 //var repo = "swagger-tools";
-//var repo = "a127";
-var repo = "magic";
+var repo = "a127";
+//var repo = "magic";
 
 var tags = "";
 var tagObj = {};
@@ -70,9 +70,9 @@ function buildNotes(tagIndex) {
                   throw error;
               } else {
                   if (body.length == 0) {
-                     rn += "### Commits\n\n" + "None"  + "\n\n";
+                     rn += "#### Commits\n\n" + "None"  + "\n\n";
                   } else {
-                     rn += "### Commits\n\n" + body + "\n\n";
+                     rn += "#### Commits\n\n" + body + "\n\n";
                   }
                   callback(null, "Getting commits..."); 
               }
@@ -87,7 +87,7 @@ function buildNotes(tagIndex) {
               if (error) {
                   throw error;
               } else {
-                  rn += "### Apigee-127 Dependencies\n\n" + processDependencies(body) + "\n\n";
+                  rn += "#### Apigee-127 Dependencies\n\n" + processDependencies(body) + "\n\n";
                   callback(null, "Getting dependenices...");
               }
            });
