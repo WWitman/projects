@@ -2,28 +2,29 @@
 
 Generates release notes for GitHub repositories.
 
-## What are release notes?
+## What do the release notes look like?
 
-For each release tag in a repository, we list the commit messages. 
+For each release tag in a repository, we list the commit messages and the Apigee-127-related dependencies (with links to their repos):
 
-## What do they look like?
 
-The release notes are formatted like this, with a heading, a list of release numbers/dates, and commits for each release:
+### apigee-127/a127 Release Notes
 
-### apigee-127/a127
+#### v0.10.1 - 2014-12-15
 
-#### v0.9.2 - 2014-11-10
+##### Commits
 
-* set a127-magic version in template
-* 0.9.2
+* fix to work with config and swagger validator changes
+* 0.10.1
 
-#### v0.9.1 - 2014-10-19
 
-* fix test
-* update x-volos tags to new x-127 syntax
-* nail down versions, version for release
-* checking for different status code for monetization enabled org
-* Merge pull request #22 from apigee-127/monetization-enabled-org-patch
+##### Apigee-127 Dependencies
+
+* [a127-magic](https://github.com/apigee-127/swagger-tools): ^0.7.0
+* [volos-management-apigee](https://github.com/apigee-127/swagger-tools): ''
+* [usergrid-installer](https://github.com/apigee-127/swagger-tools): ^0.0.5
+* [swagger-editor-for-apigee-127](https://github.com/swagger-api/swagger-editor): 2.7.2
+* [apigeetool](https://github.com/apigee/apigeetool-node): ''
+* [swagger-tools](https://github.com/apigee-127/swagger-tools): ^0.7.0
 
 
 ## Configuration
@@ -50,107 +51,92 @@ The release notes are formatted like this, with a heading, a list of release num
 
 ## How to use it
 
-The tool generates release notes for repositories that have release tags. If a repo doesn't have any tags, then we don't generate anything. 
+1. CD to the ./client folder.
+2. Open app.js and configure the account and repo variables for the GitHub account and repository you want to generate release notes for. For example:
 
-1. Get a list of valid owners. Currently, they are `apigee-127` and `swagger-api`. The first has all the Apigee-127 repos, and the latter has the Swagger editor repo. 
+```javascript
+   var account = "apigee-127";
+   var repo = "a127";
+```
 
-    ```sh
-       $ curl -i http://localhost:10010/owners/
-
-       [{"name":"apigee-127"},{"name":"swagger-api"}]
-    ```
-
-
-2. For an owner, get a list of repos. These are the repository names that you can generate release notes for. So, for owner `apigee-127`, you do:
-
-    ``` sh
-        $ curl -i http://localhost:10010/repos/apigee-127
-        {
-          "0": "apigee-127/a127",
-          "1": "apigee-127/a127-documentation",
-          "2": "apigee-127/a127-samples",
-          "3": "apigee-127/apigee-remote-proxy",
-          "4": "apigee-127/avault",
-          "5": "apigee-127/example-project",
-          "6": "apigee-127/magic",
-          "7": "apigee-127/phrixus",
-          "8": "apigee-127/project-skeleton",
-          "9": "apigee-127/site",
-          "10": "apigee-127/swagger-converter",
-          "11": "apigee-127/swagger-tools",
-          "12": "apigee-127/usergrid-npm",
-          "13": "apigee-127/usergrid-swagger",
-          "14": "apigee-127/volos"
-        }
-    ```
-
-3. Generate release notes for a given repository. This example just returns them to your client, in `.md` format. You can also save to a file and you can control how many releases to generate notes for. See the API section below.
+2. Execute the node app. Optionally, redirect output to a .md file. For example:
 
     ``` sh 
-        $ curl -i 'http://localhost:10010/repos/apigee-127/magic/release_notes
-
-        # apigee-127/magic
-
-        ## v0.7.0 - 2014-11-8
-
-        * update to work with swagger-tools 0.7 async interface
-        * update swagger-tools dep to 0.7.1
-        * 0.7.0
-
-        ...
+        $ node app > release_notes.md
     ```
 
 
 ## API
 
-### Get a list of valid owners
+### Get list of all repositories associated with an account
 
-URI: `/owners`
+URI: `/accounts/{account}/repos`
 
-This list is specified in ./config/repo.js. For now, the only two valid owners are `apigee-127` and `swagger-api`. Returns a JSON string. 
-
-**Example:**
-
-`curl -i http://localhost:10010/owners/`
-
-### Get list of all repositories owned by owner
-
-URI: `/repos/{owner}`
-
-Gets all the repositories  associated with the owner.
+Gets all the repositories  associated with the account.
 
 **Example**
 
-`curl -i http://localhost:10010/repos/apigee-127`
+`curl -i http://localhost:10010/accounts/apigee-127/repos`
 
-### Generate release notes for a repository
+### Get a repository
 
-URI: `/repos/{owner}/{repo}/release_notes`
+URI: `/accounts/{account}/repos/{repo}`
 
-Outputs release notes in `.md` format to the response for the specified repository. You also have the option of writing the release notes directly to a file by specifying the `save` query parameter. 
+Returns a JSON representation of the repository.
 
-**Query parameters:**
+**Example**
 
-* depth - (optional) Specifies the number of release tags to generate release notes for. Default: 10.
-* save - (optional) If "true", the release notes will be saved to `./relnotes/RELEASE_NOTES-<repo-name>.md`. Default: false. 
+`curl -i http://localhost:10010/accounts/apigee-127/repos/a127`
 
-**Examples:**
+### Get all the tags associated with a repository
 
-Returns release notes for the most recent 20 release tags back to the client:
+URI: `/accounts/{account}/repos/{repo}/tags`
 
-    ```curl -i 'http://localhost:10010/repos/apigee-127/magic/release_notes?depth=20```
+Returns a JSON array of all the tags.
 
+**Example**
 
-Saves release notes for the most recent 5 release tags in a file:
+`curl -i http://localhost:10010/accounts/apigee-127/repos/a127/tags`
 
-    ```curl -i 'http://localhost:10010/repos/apigee-127/magic/release_notes?depth=5&save=true'```
+### Get a specific release tag
+
+URI: `/accounts/{account}/repos/{repo}/tags/{tag}`
+
+Returns a JSON representation of the tag. 
+
+Note: {tag} is the SHA value of the tag, which you can get with `/accounts/{account}/repos/{repo}/tags`.
+
+**Example**
+
+`curl -i http://localhost:10010/accounts/apigee-127/repos/a127/tags/26064c8041eec3aa460e23fcdd1f196bc8664dbe`
+
+### Get dependencies for a tag
+
+URI: `/accounts/{account}/repos/{repo}/tags/{tag}/dependencies`
+
+where {tag} is the release version number. For example: `v0.1.2`
+
+Returns a JSON object containing all of the dependencies. 
+
+**Example**
+
+`curl -i http://localhost:10010/accounts/apigee-127/repos/a127/tags`
+
+### Get all the commits associated with a tag
+
+URI: `/accounts/{account}/repos/{repo}/tags/{tag}/commits`
+
+Returns the commits for that tag. 
+
+**Example**
+
+`curl -i http://localhost:10010/accounts/apigee-127/repos/a127/tags/v0.10.0/commits`
+
 
 
 ## TODO
 
-* Choose to only return repos that have release tags associated with them.
-* Choose to only return repos that do not have release tags. 
-* Allow user to generate one big release note output/file for all repos associated with an owner. If a repo doesn't have any release tags, output that message. 
+* 
 
 
 
