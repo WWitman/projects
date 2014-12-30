@@ -113,7 +113,7 @@ function getCommits(req, res) {
   var repo = req.swagger.params.repo.value;
   var tag = req.swagger.params.tag.value;
 
-  options.url = "https://api.github.com/repos/" + account + "/"  + repo + "/git/refs/tags/";
+  options.url = base_url + "repos/" + account + "/"  + repo + "/git/refs/tags/";
 
   request(options, function (error, response, body) {
     if (error) {
