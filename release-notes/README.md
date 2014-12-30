@@ -140,8 +140,9 @@ Returns the commits for that tag.
 
 ## TODO
 
-* 
-
+* Configure how many tags to generate for. Currently builds release notes for all tags.
+* Add command-line UI for entering the account and repo names.
+* Add file save.
 
 
 
