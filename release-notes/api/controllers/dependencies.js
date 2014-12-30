@@ -50,25 +50,10 @@ function getDependencies(req, res) {
     if (error) {
        res.send(error);
     } else {
-      var jsonData = JSON.parse(body);
-      var dependencies = cleanUpDependencies(jsonData.dependencies);
-      // send back a bullet list of the dependencies.
-//TODO: move formatting to app
-      for (var i = 0; i < dependencies.length; i++) {
-         //deps += "* " + dependencies[i] + "\n";
-           deps += dependencies[i] + ",";
-      }
-      deps = deps.slice(0, -1); 
-      res.send(body);
+      var result = JSON.parse(body);
+      result = result.dependencies;
+      res.send(result);
      
     }
   });
-}
-
-function cleanUpDependencies(dependencies) {
-    dependencies = JSON.stringify(dependencies);
-    dependencies = dependencies.replace("{", "");
-    dependencies = dependencies.replace("}", "");
-    dependencies = dependencies.split(",");
-    return dependencies;
 }
