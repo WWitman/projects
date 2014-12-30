@@ -2,7 +2,6 @@
 
 var request = require('request');
 var http = require('http');
-var _ = require('lodash');
 var config = require('../../config/secrets').user;
 var utils = require('./utils');
 var a127_deps = require('../../config/dependencies').a127_deps;
@@ -34,9 +33,9 @@ function getDependencies(req, res) {
   var tag = req.swagger.params.tag.value;
 
   if (typeof tag !== "undefined") {
-      options.url = "https://api.github.com/repos/" + account + "/" + repo + "/contents/package.json?ref="+ tag;
+      options.url = base_url + "repos/" + account + "/" + repo + "/contents/package.json?ref="+ tag;
    }  else {
-      options.url = "https://api.github.com/repos/" + account + "/" + repo + "/contents/package.json";
+      options.url = base_url + "repos/" + account + "/" + repo + "/contents/package.json";
    }
 
   options.headers = {
