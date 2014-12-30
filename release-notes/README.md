@@ -70,6 +70,14 @@ For each release tag in a repository, we list the commit messages and the Apigee
     ```
 
 
+## Client App
+
+See ./client/app.js. Builds release notes in .md format. For now, outputs dependencies that are pertinient to Apigee-127, but this can be changed to just return all dependencies, or any that you wish.
+
+As it builds release notes, returns output to the terminal. For now, to save in a file, you need to do `node app > file.md`.
+
+Note. It currently builds notes for ALL tags associated with a repository. It can take a minute or two to finish if there are a lot of tags. TODO: add a way to limit the number of tags processed. 
+
 ## API
 
 ### Get list of all repositories associated with an account
@@ -143,6 +151,7 @@ Returns the commits for that tag.
 * Configure how many tags to generate for. Currently builds release notes for all tags.
 * Add command-line UI for entering the account and repo names.
 * Add file save.
+* Add A-127 caching.
 
 
 
