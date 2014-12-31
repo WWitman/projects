@@ -10,9 +10,9 @@
 
 #### Apigee-127 Dependencies
 
-* [a127-magic](https://github.com/apigee-127/swagger-tools): ^0.7.0
-* [volos-management-apigee](https://github.com/apigee-127/swagger-tools): ''
-* [usergrid-installer](https://github.com/apigee-127/swagger-tools): ^0.0.5
+* [a127-magic](https://github.com/apigee-127/magic): ^0.7.0
+* [volos-management-apigee](https://github.com/apigee-127/volos): ''
+* [usergrid-installer](https://github.com/apigee-127/usergrid-npm): ^0.0.5
 * [swagger-editor-for-apigee-127](https://github.com/swagger-api/swagger-editor): 2.7.2
 * [apigeetool](https://github.com/apigee/apigeetool-node): ''
 * [swagger-tools](https://github.com/apigee-127/swagger-tools): ^0.7.0
@@ -32,9 +32,9 @@
 
 #### Apigee-127 Dependencies
 
-* [a127-magic](https://github.com/apigee-127/swagger-tools): ^0.7.0
-* [volos-management-apigee](https://github.com/apigee-127/swagger-tools): ''
-* [usergrid-installer](https://github.com/apigee-127/swagger-tools): ^0.0.5
+* [a127-magic](https://github.com/apigee-127/magic): ^0.7.0
+* [volos-management-apigee](https://github.com/apigee-127/volos): ''
+* [usergrid-installer](https://github.com/apigee-127/usergrid-npm): ^0.0.5
 * [swagger-editor-for-apigee-127](https://github.com/swagger-api/swagger-editor): 2.7.2
 * [apigeetool](https://github.com/apigee/apigeetool-node): ''
 * [swagger-tools](https://github.com/apigee-127/swagger-tools): ^0.7.0
@@ -51,9 +51,9 @@
 
 #### Apigee-127 Dependencies
 
-* [a127-magic](https://github.com/apigee-127/swagger-tools): ^0.6.0
-* [volos-management-apigee](https://github.com/apigee-127/swagger-tools): ''
-* [usergrid-installer](https://github.com/apigee-127/swagger-tools): ^0.0.5
+* [a127-magic](https://github.com/apigee-127/magic): ^0.6.0
+* [volos-management-apigee](https://github.com/apigee-127/volos): ''
+* [usergrid-installer](https://github.com/apigee-127/usergrid-npm): ^0.0.5
 * [swagger-editor-for-apigee-127](https://github.com/swagger-api/swagger-editor): 2.7.2
 * [apigeetool](https://github.com/apigee/apigeetool-node): ''
 * [swagger-tools](https://github.com/apigee-127/swagger-tools): ^0.6.3
@@ -76,9 +76,9 @@
 
 #### Apigee-127 Dependencies
 
-* [a127-magic](https://github.com/apigee-127/swagger-tools): ^0.6.0
-* [volos-management-apigee](https://github.com/apigee-127/swagger-tools): ''
-* [usergrid-installer](https://github.com/apigee-127/swagger-tools): ^0.0.5
+* [a127-magic](https://github.com/apigee-127/magic): ^0.6.0
+* [volos-management-apigee](https://github.com/apigee-127/volos): ''
+* [usergrid-installer](https://github.com/apigee-127/usergrid-npm): ^0.0.5
 * [swagger-editor-for-apigee-127](https://github.com/swagger-api/swagger-editor): 2.7.2
 * [apigeetool](https://github.com/apigee/apigeetool-node): ''
 * [swagger-tools](https://github.com/apigee-127/swagger-tools): ^0.6.3
@@ -103,9 +103,9 @@
 
 #### Apigee-127 Dependencies
 
-* [a127-magic](https://github.com/apigee-127/swagger-tools): ''
-* [volos-management-apigee](https://github.com/apigee-127/swagger-tools): ''
-* [usergrid-installer](https://github.com/apigee-127/swagger-tools): ''
+* [a127-magic](https://github.com/apigee-127/magic): ''
+* [volos-management-apigee](https://github.com/apigee-127/volos): ''
+* [usergrid-installer](https://github.com/apigee-127/usergrid-npm): ''
 * [swagger-editor-for-apigee-127](https://github.com/swagger-api/swagger-editor): 2.7.2
 * [apigeetool](https://github.com/apigee/apigeetool-node): ''
 * [swagger-tools](https://github.com/apigee-127/swagger-tools): ''
@@ -150,9 +150,9 @@
 
 #### Apigee-127 Dependencies
 
-* [a127-magic](https://github.com/apigee-127/swagger-tools): ''
-* [volos-management-apigee](https://github.com/apigee-127/swagger-tools): ''
-* [usergrid-installer](https://github.com/apigee-127/swagger-tools): ''
+* [a127-magic](https://github.com/apigee-127/magic): ''
+* [volos-management-apigee](https://github.com/apigee-127/volos): ''
+* [usergrid-installer](https://github.com/apigee-127/usergrid-npm): ''
 * [swagger-editor-for-apigee-127](https://github.com/swagger-api/swagger-editor): 2.7.2
 * [apigeetool](https://github.com/apigee/apigeetool-node): ''
 * [swagger-tools](https://github.com/apigee-127/swagger-tools): ''
@@ -177,9 +177,9 @@
 
 #### Apigee-127 Dependencies
 
-* [a127-magic](https://github.com/apigee-127/swagger-tools): ''
-* [volos-management-apigee](https://github.com/apigee-127/swagger-tools): ''
-* [usergrid-installer](https://github.com/apigee-127/swagger-tools): ''
+* [a127-magic](https://github.com/apigee-127/magic): ''
+* [volos-management-apigee](https://github.com/apigee-127/volos): ''
+* [usergrid-installer](https://github.com/apigee-127/usergrid-npm): ''
 * [swagger-editor-for-apigee-127](https://github.com/swagger-api/swagger-editor): 2.6.18
 * [apigeetool](https://github.com/apigee/apigeetool-node): ''
 * [swagger-tools](https://github.com/apigee-127/swagger-tools): ''
@@ -195,9 +195,9 @@
 
 #### Apigee-127 Dependencies
 
-* [a127-magic](https://github.com/apigee-127/swagger-tools): ''
-* [volos-management-apigee](https://github.com/apigee-127/swagger-tools): ''
-* [usergrid-installer](https://github.com/apigee-127/swagger-tools): ''
+* [a127-magic](https://github.com/apigee-127/magic): ''
+* [volos-management-apigee](https://github.com/apigee-127/volos): ''
+* [usergrid-installer](https://github.com/apigee-127/usergrid-npm): ''
 * [swagger-editor-for-apigee-127](https://github.com/swagger-api/swagger-editor): 2.6.18
 * [apigeetool](https://github.com/apigee/apigeetool-node): ''
 * [swagger-tools](https://github.com/apigee-127/swagger-tools): ''
@@ -217,9 +217,9 @@
 
 #### Apigee-127 Dependencies
 
-* [a127-magic](https://github.com/apigee-127/swagger-tools): ''
-* [volos-management-apigee](https://github.com/apigee-127/swagger-tools): ''
-* [usergrid-installer](https://github.com/apigee-127/swagger-tools): ''
+* [a127-magic](https://github.com/apigee-127/magic): ''
+* [volos-management-apigee](https://github.com/apigee-127/volos): ''
+* [usergrid-installer](https://github.com/apigee-127/usergrid-npm): ''
 * [swagger-editor-for-apigee-127](https://github.com/swagger-api/swagger-editor): 2.6.18
 * [apigeetool](https://github.com/apigee/apigeetool-node): ''
 * [swagger-tools](https://github.com/apigee-127/swagger-tools): ''
@@ -242,9 +242,9 @@
 
 #### Apigee-127 Dependencies
 
-* [a127-magic](https://github.com/apigee-127/swagger-tools): ''
-* [volos-management-apigee](https://github.com/apigee-127/swagger-tools): ''
-* [usergrid-installer](https://github.com/apigee-127/swagger-tools): ''
+* [a127-magic](https://github.com/apigee-127/magic): ''
+* [volos-management-apigee](https://github.com/apigee-127/volos): ''
+* [usergrid-installer](https://github.com/apigee-127/usergrid-npm): ''
 * [swagger-editor-for-apigee-127](https://github.com/swagger-api/swagger-editor): 2.6.8
 * [apigeetool](https://github.com/apigee/apigeetool-node): ''
 * [swagger-tools](https://github.com/apigee-127/swagger-tools): ''
@@ -264,9 +264,9 @@
 
 #### Apigee-127 Dependencies
 
-* [a127-magic](https://github.com/apigee-127/swagger-tools): ''
-* [volos-management-apigee](https://github.com/apigee-127/swagger-tools): ''
-* [usergrid-installer](https://github.com/apigee-127/swagger-tools): ''
+* [a127-magic](https://github.com/apigee-127/magic): ''
+* [volos-management-apigee](https://github.com/apigee-127/volos): ''
+* [usergrid-installer](https://github.com/apigee-127/usergrid-npm): ''
 * [swagger-editor-for-apigee-127](https://github.com/swagger-api/swagger-editor): 2.6.8
 * [apigeetool](https://github.com/apigee/apigeetool-node): ''
 * [swagger-tools](https://github.com/apigee-127/swagger-tools): ''
@@ -294,9 +294,9 @@
 
 #### Apigee-127 Dependencies
 
-* [a127-magic](https://github.com/apigee-127/swagger-tools): ''
-* [volos-management-apigee](https://github.com/apigee-127/swagger-tools): ''
-* [usergrid-installer](https://github.com/apigee-127/swagger-tools): ''
+* [a127-magic](https://github.com/apigee-127/magic): ''
+* [volos-management-apigee](https://github.com/apigee-127/volos): ''
+* [usergrid-installer](https://github.com/apigee-127/usergrid-npm): ''
 * [swagger-editor-for-apigee-127](https://github.com/swagger-api/swagger-editor): 2.6.2
 * [apigeetool](https://github.com/apigee/apigeetool-node): ''
 * [swagger-tools](https://github.com/apigee-127/swagger-tools): ''
@@ -313,9 +313,9 @@
 
 #### Apigee-127 Dependencies
 
-* [a127-magic](https://github.com/apigee-127/swagger-tools): ''
-* [volos-management-apigee](https://github.com/apigee-127/swagger-tools): ''
-* [usergrid-installer](https://github.com/apigee-127/swagger-tools): 0.0.x
+* [a127-magic](https://github.com/apigee-127/magic): ''
+* [volos-management-apigee](https://github.com/apigee-127/volos): ''
+* [usergrid-installer](https://github.com/apigee-127/usergrid-npm): 0.0.x
 * [swagger-editor-for-apigee-127](https://github.com/swagger-api/swagger-editor): 2.x.x
 * [apigeetool](https://github.com/apigee/apigeetool-node): ''
 * [swagger-tools](https://github.com/apigee-127/swagger-tools): 0.5.x
@@ -332,9 +332,9 @@
 
 #### Apigee-127 Dependencies
 
-* [a127-magic](https://github.com/apigee-127/swagger-tools): ''
-* [volos-management-apigee](https://github.com/apigee-127/swagger-tools): ''
-* [usergrid-installer](https://github.com/apigee-127/swagger-tools): 0.0.x
+* [a127-magic](https://github.com/apigee-127/magic): ''
+* [volos-management-apigee](https://github.com/apigee-127/volos): ''
+* [usergrid-installer](https://github.com/apigee-127/usergrid-npm): 0.0.x
 * [swagger-editor-for-apigee-127](https://github.com/swagger-api/swagger-editor): 2.x.x
 * [apigeetool](https://github.com/apigee/apigeetool-node): ''
 * [swagger-tools](https://github.com/apigee-127/swagger-tools): 0.5.x
@@ -353,9 +353,9 @@
 
 #### Apigee-127 Dependencies
 
-* [a127-magic](https://github.com/apigee-127/swagger-tools): ''
-* [volos-management-apigee](https://github.com/apigee-127/swagger-tools): ''
-* [usergrid-installer](https://github.com/apigee-127/swagger-tools): 0.0.x
+* [a127-magic](https://github.com/apigee-127/magic): ''
+* [volos-management-apigee](https://github.com/apigee-127/volos): ''
+* [usergrid-installer](https://github.com/apigee-127/usergrid-npm): 0.0.x
 * [swagger-editor-for-apigee-127](https://github.com/swagger-api/swagger-editor): 2.x.x
 * [apigeetool](https://github.com/apigee/apigeetool-node): ''
 * [swagger-tools](https://github.com/apigee-127/swagger-tools): 0.5.x
@@ -374,9 +374,9 @@
 
 #### Apigee-127 Dependencies
 
-* [a127-magic](https://github.com/apigee-127/swagger-tools): ''
-* [volos-management-apigee](https://github.com/apigee-127/swagger-tools): ''
-* [usergrid-installer](https://github.com/apigee-127/swagger-tools): 0.0.x
+* [a127-magic](https://github.com/apigee-127/magic): ''
+* [volos-management-apigee](https://github.com/apigee-127/volos): ''
+* [usergrid-installer](https://github.com/apigee-127/usergrid-npm): 0.0.x
 * [swagger-editor-for-apigee-127](https://github.com/swagger-api/swagger-editor): 2.x.x
 * [apigeetool](https://github.com/apigee/apigeetool-node): ''
 * [swagger-tools](https://github.com/apigee-127/swagger-tools): 0.5.x
@@ -393,9 +393,9 @@
 
 #### Apigee-127 Dependencies
 
-* [a127-magic](https://github.com/apigee-127/swagger-tools): ''
-* [volos-management-apigee](https://github.com/apigee-127/swagger-tools): ''
-* [usergrid-installer](https://github.com/apigee-127/swagger-tools): 0.0.x
+* [a127-magic](https://github.com/apigee-127/magic): ''
+* [volos-management-apigee](https://github.com/apigee-127/volos): ''
+* [usergrid-installer](https://github.com/apigee-127/usergrid-npm): 0.0.x
 * [swagger-editor-for-apigee-127](https://github.com/swagger-api/swagger-editor): 2.x.x
 * [apigeetool](https://github.com/apigee/apigeetool-node): ''
 * [swagger-tools](https://github.com/apigee-127/swagger-tools): 0.5.x
@@ -413,9 +413,9 @@
 
 #### Apigee-127 Dependencies
 
-* [a127-magic](https://github.com/apigee-127/swagger-tools): ''
-* [volos-management-apigee](https://github.com/apigee-127/swagger-tools): ''
-* [usergrid-installer](https://github.com/apigee-127/swagger-tools): 0.0.x
+* [a127-magic](https://github.com/apigee-127/magic): ''
+* [volos-management-apigee](https://github.com/apigee-127/volos): ''
+* [usergrid-installer](https://github.com/apigee-127/usergrid-npm): 0.0.x
 * [swagger-editor-for-apigee-127](https://github.com/swagger-api/swagger-editor): 2.x.x
 * [apigeetool](https://github.com/apigee/apigeetool-node): ''
 * [swagger-tools](https://github.com/apigee-127/swagger-tools): 0.5.x
@@ -434,9 +434,9 @@
 
 #### Apigee-127 Dependencies
 
-* [a127-magic](https://github.com/apigee-127/swagger-tools): ''
-* [volos-management-apigee](https://github.com/apigee-127/swagger-tools): ''
-* [usergrid-installer](https://github.com/apigee-127/swagger-tools): 0.0.x
+* [a127-magic](https://github.com/apigee-127/magic): ''
+* [volos-management-apigee](https://github.com/apigee-127/volos): ''
+* [usergrid-installer](https://github.com/apigee-127/usergrid-npm): 0.0.x
 * [swagger-editor-for-apigee-127](https://github.com/swagger-api/swagger-editor): 2.x.x
 * [apigeetool](https://github.com/apigee/apigeetool-node): ''
 * [swagger-tools](https://github.com/apigee-127/swagger-tools): 0.5.x
@@ -453,8 +453,8 @@
 
 #### Apigee-127 Dependencies
 
-* [volos-management-apigee](https://github.com/apigee-127/swagger-tools): ''
-* [usergrid-installer](https://github.com/apigee-127/swagger-tools): 0.0.x
+* [volos-management-apigee](https://github.com/apigee-127/volos): ''
+* [usergrid-installer](https://github.com/apigee-127/usergrid-npm): 0.0.x
 * [swagger-editor-for-apigee-127](https://github.com/swagger-api/swagger-editor): 2.x.x
 * [apigeetool](https://github.com/apigee/apigeetool-node): ''
 * [swagger-tools](https://github.com/apigee-127/swagger-tools): 0.5.x
@@ -472,8 +472,8 @@
 
 #### Apigee-127 Dependencies
 
-* [volos-management-apigee](https://github.com/apigee-127/swagger-tools): ''
-* [usergrid-installer](https://github.com/apigee-127/swagger-tools): 0.0.x
+* [volos-management-apigee](https://github.com/apigee-127/volos): ''
+* [usergrid-installer](https://github.com/apigee-127/usergrid-npm): 0.0.x
 * [swagger-editor-for-apigee-127](https://github.com/swagger-api/swagger-editor): 2.x.x
 * [apigeetool](https://github.com/apigee/apigeetool-node): ''
 * [swagger-tools](https://github.com/apigee-127/swagger-tools): 0.5.x
@@ -495,8 +495,8 @@ was not matching anything because ncp mixes path separators on Windows.
 
 #### Apigee-127 Dependencies
 
-* [volos-management-apigee](https://github.com/apigee-127/swagger-tools): ''
-* [usergrid-installer](https://github.com/apigee-127/swagger-tools): 0.0.x
+* [volos-management-apigee](https://github.com/apigee-127/volos): ''
+* [usergrid-installer](https://github.com/apigee-127/usergrid-npm): 0.0.x
 * [swagger-editor-for-apigee-127](https://github.com/swagger-api/swagger-editor): 2.x.x
 * [apigeetool](https://github.com/apigee/apigeetool-node): ''
 * [swagger-tools](https://github.com/apigee-127/swagger-tools): 0.5.x
@@ -513,8 +513,8 @@ was not matching anything because ncp mixes path separators on Windows.
 
 #### Apigee-127 Dependencies
 
-* [volos-management-apigee](https://github.com/apigee-127/swagger-tools): ''
-* [usergrid-installer](https://github.com/apigee-127/swagger-tools): 0.0.x
+* [volos-management-apigee](https://github.com/apigee-127/volos): ''
+* [usergrid-installer](https://github.com/apigee-127/usergrid-npm): 0.0.x
 * [swagger-editor-for-apigee-127](https://github.com/swagger-api/swagger-editor): 2.x.x
 * [apigeetool](https://github.com/apigee/apigeetool-node): ''
 * [swagger-tools](https://github.com/apigee-127/swagger-tools): ^0.5.2
@@ -531,8 +531,8 @@ was not matching anything because ncp mixes path separators on Windows.
 
 #### Apigee-127 Dependencies
 
-* [volos-management-apigee](https://github.com/apigee-127/swagger-tools): ''
-* [usergrid-installer](https://github.com/apigee-127/swagger-tools): 0.0.x
+* [volos-management-apigee](https://github.com/apigee-127/volos): ''
+* [usergrid-installer](https://github.com/apigee-127/usergrid-npm): 0.0.x
 * [swagger-editor-for-apigee-127](https://github.com/swagger-api/swagger-editor): 2.x.x
 * [apigeetool](https://github.com/apigee/apigeetool-node): ''
 * [swagger-tools](https://github.com/apigee-127/swagger-tools): ^0.5.2
@@ -552,8 +552,8 @@ was not matching anything because ncp mixes path separators on Windows.
 
 #### Apigee-127 Dependencies
 
-* [volos-management-apigee](https://github.com/apigee-127/swagger-tools): ''
-* [usergrid-installer](https://github.com/apigee-127/swagger-tools): 0.0.x
+* [volos-management-apigee](https://github.com/apigee-127/volos): ''
+* [usergrid-installer](https://github.com/apigee-127/usergrid-npm): 0.0.x
 * [swagger-editor-for-apigee-127](https://github.com/swagger-api/swagger-editor): 2.x.x
 * [apigeetool](https://github.com/apigee/apigeetool-node): ''
 * [swagger-tools](https://github.com/apigee-127/swagger-tools): ^0.5.2
@@ -570,8 +570,8 @@ was not matching anything because ncp mixes path separators on Windows.
 
 #### Apigee-127 Dependencies
 
-* [volos-management-apigee](https://github.com/apigee-127/swagger-tools): ''
-* [usergrid-installer](https://github.com/apigee-127/swagger-tools): 0.0.x
+* [volos-management-apigee](https://github.com/apigee-127/volos): ''
+* [usergrid-installer](https://github.com/apigee-127/usergrid-npm): 0.0.x
 * [swagger-editor-for-apigee-127](https://github.com/swagger-api/swagger-editor): 2.x.x
 * [apigeetool](https://github.com/apigee/apigeetool-node): ''
 * [swagger-tools](https://github.com/apigee-127/swagger-tools): ^0.5.2
@@ -589,8 +589,8 @@ was not matching anything because ncp mixes path separators on Windows.
 
 #### Apigee-127 Dependencies
 
-* [volos-management-apigee](https://github.com/apigee-127/swagger-tools): ''
-* [usergrid-installer](https://github.com/apigee-127/swagger-tools): 0.0.x
+* [volos-management-apigee](https://github.com/apigee-127/volos): ''
+* [usergrid-installer](https://github.com/apigee-127/usergrid-npm): 0.0.x
 * [swagger-editor-for-apigee-127](https://github.com/swagger-api/swagger-editor): 2.x.x
 * [apigeetool](https://github.com/apigee/apigeetool-node): ''
 * [swagger-tools](https://github.com/apigee-127/swagger-tools): ^0.5.2
@@ -609,8 +609,8 @@ was not matching anything because ncp mixes path separators on Windows.
 
 #### Apigee-127 Dependencies
 
-* [volos-management-apigee](https://github.com/apigee-127/swagger-tools): ''
-* [usergrid-installer](https://github.com/apigee-127/swagger-tools): 0.0.x
+* [volos-management-apigee](https://github.com/apigee-127/volos): ''
+* [usergrid-installer](https://github.com/apigee-127/usergrid-npm): 0.0.x
 * [swagger-editor-for-apigee-127](https://github.com/swagger-api/swagger-editor): 2.x.x
 * [apigeetool](https://github.com/apigee/apigeetool-node): ''
 * [swagger-tools](https://github.com/apigee-127/swagger-tools): ^0.5.2
@@ -628,8 +628,8 @@ was not matching anything because ncp mixes path separators on Windows.
 
 #### Apigee-127 Dependencies
 
-* [volos-management-apigee](https://github.com/apigee-127/swagger-tools): ''
-* [usergrid-installer](https://github.com/apigee-127/swagger-tools): 0.0.x
+* [volos-management-apigee](https://github.com/apigee-127/volos): ''
+* [usergrid-installer](https://github.com/apigee-127/usergrid-npm): 0.0.x
 * [swagger-editor-for-apigee-127](https://github.com/swagger-api/swagger-editor): 2.x.x
 * [apigeetool](https://github.com/apigee/apigeetool-node): ''
 * [swagger-tools](https://github.com/apigee-127/swagger-tools): ^0.5.2
@@ -651,8 +651,8 @@ was not matching anything because ncp mixes path separators on Windows.
 
 #### Apigee-127 Dependencies
 
-* [volos-management-apigee](https://github.com/apigee-127/swagger-tools): ''
-* [usergrid-installer](https://github.com/apigee-127/swagger-tools): 0.0.x
+* [volos-management-apigee](https://github.com/apigee-127/volos): ''
+* [usergrid-installer](https://github.com/apigee-127/usergrid-npm): 0.0.x
 * [swagger-editor-for-apigee-127](https://github.com/swagger-api/swagger-editor): 2.x.x
 * [apigeetool](https://github.com/apigee/apigeetool-node): ''
 * [swagger-tools](https://github.com/apigee-127/swagger-tools): ^0.5.2
@@ -676,8 +676,8 @@ was not matching anything because ncp mixes path separators on Windows.
 
 #### Apigee-127 Dependencies
 
-* [volos-management-apigee](https://github.com/apigee-127/swagger-tools): ''
-* [usergrid-installer](https://github.com/apigee-127/swagger-tools): 0.0.x
+* [volos-management-apigee](https://github.com/apigee-127/volos): ''
+* [usergrid-installer](https://github.com/apigee-127/usergrid-npm): 0.0.x
 * [swagger-editor-for-apigee-127](https://github.com/swagger-api/swagger-editor): 2.x.x
 * [apigeetool](https://github.com/apigee/apigeetool-node): ''
 * [swagger-tools](https://github.com/apigee-127/swagger-tools): ^0.5.2
@@ -698,7 +698,7 @@ was not matching anything because ncp mixes path separators on Windows.
 
 #### Apigee-127 Dependencies
 
-* [usergrid-installer](https://github.com/apigee-127/swagger-tools): 0.0.x
+* [usergrid-installer](https://github.com/apigee-127/usergrid-npm): 0.0.x
 * [swagger-editor-for-apigee-127](https://github.com/swagger-api/swagger-editor): 2.x.x
 * [apigeetool](https://github.com/apigee/apigeetool-node): ''
 * [swagger-tools](https://github.com/apigee-127/swagger-tools): ^0.5.2
@@ -722,7 +722,7 @@ was not matching anything because ncp mixes path separators on Windows.
 
 #### Apigee-127 Dependencies
 
-* [usergrid-installer](https://github.com/apigee-127/swagger-tools): 0.0.x
+* [usergrid-installer](https://github.com/apigee-127/usergrid-npm): 0.0.x
 * [swagger-editor-for-apigee-127](https://github.com/swagger-api/swagger-editor): 2.x.x
 * [apigeetool](https://github.com/apigee/apigeetool-node): ''
 * [swagger-tools](https://github.com/apigee-127/swagger-tools): ^0.5.2
@@ -739,7 +739,7 @@ was not matching anything because ncp mixes path separators on Windows.
 
 #### Apigee-127 Dependencies
 
-* [usergrid-installer](https://github.com/apigee-127/swagger-tools): 0.0.x
+* [usergrid-installer](https://github.com/apigee-127/usergrid-npm): 0.0.x
 * [swagger-editor-for-apigee-127](https://github.com/swagger-api/swagger-editor): 2.x.x
 * [apigeetool](https://github.com/apigee/apigeetool-node): ''
 
@@ -755,7 +755,7 @@ was not matching anything because ncp mixes path separators on Windows.
 
 #### Apigee-127 Dependencies
 
-* [usergrid-installer](https://github.com/apigee-127/swagger-tools): 0.0.x
+* [usergrid-installer](https://github.com/apigee-127/usergrid-npm): 0.0.x
 * [swagger-editor-for-apigee-127](https://github.com/swagger-api/swagger-editor): 2.x.x
 * [apigeetool](https://github.com/apigee/apigeetool-node): ''
 
@@ -771,7 +771,7 @@ was not matching anything because ncp mixes path separators on Windows.
 
 #### Apigee-127 Dependencies
 
-* [usergrid-installer](https://github.com/apigee-127/swagger-tools): 0.0.x
+* [usergrid-installer](https://github.com/apigee-127/usergrid-npm): 0.0.x
 * [swagger-editor-for-apigee-127](https://github.com/swagger-api/swagger-editor): 2.x.x
 * [apigeetool](https://github.com/apigee/apigeetool-node): ''
 
@@ -791,7 +791,7 @@ was not matching anything because ncp mixes path separators on Windows.
 
 #### Apigee-127 Dependencies
 
-* [usergrid-installer](https://github.com/apigee-127/swagger-tools): 0.0.x
+* [usergrid-installer](https://github.com/apigee-127/usergrid-npm): 0.0.x
 * [swagger-editor-for-apigee-127](https://github.com/swagger-api/swagger-editor): 2.x.x
 * [apigeetool](https://github.com/apigee/apigeetool-node): ''
 
@@ -807,7 +807,7 @@ was not matching anything because ncp mixes path separators on Windows.
 
 #### Apigee-127 Dependencies
 
-* [usergrid-installer](https://github.com/apigee-127/swagger-tools): 0.0.x
+* [usergrid-installer](https://github.com/apigee-127/usergrid-npm): 0.0.x
 * [swagger-editor-for-apigee-127](https://github.com/swagger-api/swagger-editor): 2.x.x
 * [apigeetool](https://github.com/apigee/apigeetool-node): ''
 
@@ -823,7 +823,7 @@ was not matching anything because ncp mixes path separators on Windows.
 
 #### Apigee-127 Dependencies
 
-* [usergrid-installer](https://github.com/apigee-127/swagger-tools): 0.0.x
+* [usergrid-installer](https://github.com/apigee-127/usergrid-npm): 0.0.x
 * [swagger-editor-for-apigee-127](https://github.com/swagger-api/swagger-editor): 2.x.x
 * [apigeetool](https://github.com/apigee/apigeetool-node): ''
 
@@ -839,7 +839,7 @@ was not matching anything because ncp mixes path separators on Windows.
 
 #### Apigee-127 Dependencies
 
-* [usergrid-installer](https://github.com/apigee-127/swagger-tools): 0.0.x
+* [usergrid-installer](https://github.com/apigee-127/usergrid-npm): 0.0.x
 * [swagger-editor-for-apigee-127](https://github.com/swagger-api/swagger-editor): 2.x.x
 * [apigeetool](https://github.com/apigee/apigeetool-node): ''
 
@@ -855,7 +855,7 @@ was not matching anything because ncp mixes path separators on Windows.
 
 #### Apigee-127 Dependencies
 
-* [usergrid-installer](https://github.com/apigee-127/swagger-tools): 0.0.x
+* [usergrid-installer](https://github.com/apigee-127/usergrid-npm): 0.0.x
 * [apigeetool](https://github.com/apigee/apigeetool-node): ''
 
 
@@ -871,7 +871,7 @@ was not matching anything because ncp mixes path separators on Windows.
 
 #### Apigee-127 Dependencies
 
-* [usergrid-installer](https://github.com/apigee-127/swagger-tools): 0.0.x
+* [usergrid-installer](https://github.com/apigee-127/usergrid-npm): 0.0.x
 * [apigeetool](https://github.com/apigee/apigeetool-node): ''
 
 
@@ -886,7 +886,7 @@ was not matching anything because ncp mixes path separators on Windows.
 
 #### Apigee-127 Dependencies
 
-* [usergrid-installer](https://github.com/apigee-127/swagger-tools): 0.0.x
+* [usergrid-installer](https://github.com/apigee-127/usergrid-npm): 0.0.x
 * [apigeetool](https://github.com/apigee/apigeetool-node): ''
 
 
@@ -901,7 +901,7 @@ was not matching anything because ncp mixes path separators on Windows.
 
 #### Apigee-127 Dependencies
 
-* [usergrid-installer](https://github.com/apigee-127/swagger-tools): 0.0.x
+* [usergrid-installer](https://github.com/apigee-127/usergrid-npm): 0.0.x
 * [apigeetool](https://github.com/apigee/apigeetool-node): ''
 
 
@@ -916,7 +916,7 @@ was not matching anything because ncp mixes path separators on Windows.
 
 #### Apigee-127 Dependencies
 
-* [usergrid-installer](https://github.com/apigee-127/swagger-tools): 0.0.x
+* [usergrid-installer](https://github.com/apigee-127/usergrid-npm): 0.0.x
 * [apigeetool](https://github.com/apigee/apigeetool-node): ''
 
 
@@ -933,7 +933,7 @@ was not matching anything because ncp mixes path separators on Windows.
 
 #### Apigee-127 Dependencies
 
-* [usergrid-installer](https://github.com/apigee-127/swagger-tools): 0.0.x
+* [usergrid-installer](https://github.com/apigee-127/usergrid-npm): 0.0.x
 * [apigeetool](https://github.com/apigee/apigeetool-node): ''
 
 
@@ -952,7 +952,7 @@ was not matching anything because ncp mixes path separators on Windows.
 
 #### Apigee-127 Dependencies
 
-* [usergrid-installer](https://github.com/apigee-127/swagger-tools): 0.0.x
+* [usergrid-installer](https://github.com/apigee-127/usergrid-npm): 0.0.x
 * [apigeetool](https://github.com/apigee/apigeetool-node): ''
 
 
@@ -967,7 +967,7 @@ was not matching anything because ncp mixes path separators on Windows.
 
 #### Apigee-127 Dependencies
 
-* [usergrid-installer](https://github.com/apigee-127/swagger-tools): 0.0.x
+* [usergrid-installer](https://github.com/apigee-127/usergrid-npm): 0.0.x
 * [apigeetool](https://github.com/apigee/apigeetool-node): ''
 
 
@@ -987,7 +987,7 @@ was not matching anything because ncp mixes path separators on Windows.
 
 #### Apigee-127 Dependencies
 
-* [usergrid-installer](https://github.com/apigee-127/swagger-tools): 0.0.x
+* [usergrid-installer](https://github.com/apigee-127/usergrid-npm): 0.0.x
 * [apigeetool](https://github.com/apigee/apigeetool-node): ''
 
 
@@ -1002,7 +1002,7 @@ was not matching anything because ncp mixes path separators on Windows.
 
 #### Apigee-127 Dependencies
 
-* [usergrid-installer](https://github.com/apigee-127/swagger-tools): 0.0.x
+* [usergrid-installer](https://github.com/apigee-127/usergrid-npm): 0.0.x
 * [apigeetool](https://github.com/apigee/apigeetool-node): ''
 
 
@@ -1017,7 +1017,7 @@ was not matching anything because ncp mixes path separators on Windows.
 
 #### Apigee-127 Dependencies
 
-* [usergrid-installer](https://github.com/apigee-127/swagger-tools): 0.0.x
+* [usergrid-installer](https://github.com/apigee-127/usergrid-npm): 0.0.x
 * [apigeetool](https://github.com/apigee/apigeetool-node): ''
 
 
@@ -1032,7 +1032,7 @@ was not matching anything because ncp mixes path separators on Windows.
 
 #### Apigee-127 Dependencies
 
-* [usergrid-installer](https://github.com/apigee-127/swagger-tools): 0.0.x
+* [usergrid-installer](https://github.com/apigee-127/usergrid-npm): 0.0.x
 * [apigeetool](https://github.com/apigee/apigeetool-node): ''
 
 
@@ -1049,7 +1049,7 @@ was not matching anything because ncp mixes path separators on Windows.
 
 #### Apigee-127 Dependencies
 
-* [usergrid-installer](https://github.com/apigee-127/swagger-tools): 0.0.x
+* [usergrid-installer](https://github.com/apigee-127/usergrid-npm): 0.0.x
 * [apigeetool](https://github.com/apigee/apigeetool-node): ''
 
 
@@ -1062,7 +1062,7 @@ None
 
 #### Apigee-127 Dependencies
 
-* [usergrid-installer](https://github.com/apigee-127/swagger-tools): 0.0.x
+* [usergrid-installer](https://github.com/apigee-127/usergrid-npm): 0.0.x
 * [apigeetool](https://github.com/apigee/apigeetool-node): ''
 
 
