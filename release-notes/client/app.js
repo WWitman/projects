@@ -150,11 +150,11 @@ function link(mod, dependencies) {
     } else if (mod == "swagger-editor-for-apigee-127") {
        url = "https://github.com/swagger-api/swagger-editor"
     } else if (mod == "usergrid-installer") {
-       url = "https://github.com/apigee-127/swagger-tools"
+       url = "https://github.com/apigee-127/usergrid-npm"
     } else if (mod == "volos-management-apigee") {
-       url = "https://github.com/apigee-127/swagger-tools"
+       url = "https://github.com/apigee-127/volos"
     } else if (mod == "a127-magic") {
-       url = "https://github.com/apigee-127/swagger-tools"
+       url = "https://github.com/apigee-127/magic"
     } else if (mod == "apigee-remote-proxy") {
        url = "https://github.com/apigee-127/swagger-tools"
     } else if (mod == "swagger-converter") {
