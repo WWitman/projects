@@ -1,6 +1,6 @@
 'use strict';
 
-var accounts = require('../../config/config').accounts;
+var accounts = require('../../config/config.js').accounts;
 
 module.exports = {
   getAccounts: getAccounts,

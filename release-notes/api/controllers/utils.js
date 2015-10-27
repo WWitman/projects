@@ -16,7 +16,7 @@ module.exports = {
 function formatDate(datestr) {
     var date = new Date(datestr);
     var month = date.getMonth() + 1;
-    return date.getFullYear() + "-" + month + "-" + date.getDate();
+    return month + "-" + date.getDate() + "-" + date.getFullYear();
 }
 
 function writeTitle(owner, repo, callback) {
@@ -51,8 +51,13 @@ function parseComments(data) {
 }
 
 function getVersionFromTag(data, index) {
-        var version = data[index].ref;
-        var s = version.split("/");
-        version = s[s.length-1];
-        return version;
+console.log("REF: " + typeof data[index] != 'undefined');
+     if (typeof data[index] != 'undefined') {
+         var version = data[index].ref;
+         var s = version.split("/");
+         version = s[s.length-1];
+         return version;
+     } else {
+         return "No Release";
+     }
 }

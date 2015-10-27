@@ -87,13 +87,18 @@ function compareTags(i, jsonData,  tagIndex, account, repo, res)  {
                    res.send(error);
                } else {
                   var jsonData2 = JSON.parse(body);
+console.log("COMMITS: " + jsonData2);
                   // Build up bulleted list of commits
 //TODO: return string and move this formatting to the app
-                  for (var y=0; y<jsonData2.commits.length; y++) {
-                     data = data + "* " + utils.parseComments(jsonData2.commits[y].commit.message) + "\n";
+                  if (typeof jsonData2.commits != 'undefined') {
+                      for (var y=0; y<jsonData2.commits.length; y++) {
+                         data = data + "* " + utils.parseComments(jsonData2.commits[y].commit.message) + "\n";
+                      }
+                      res.write(data);
+                      compareTags(i+1, jsonData, tagIndex+1, account, repo, res);
+                  } else {
+                      console.log("COMMITS UNDEFINED");
                   }
-                  res.write(data);
-                  compareTags(i+1, jsonData, tagIndex+1, account, repo, res);
                }
             });
         } else {
