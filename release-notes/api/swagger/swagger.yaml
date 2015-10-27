@@ -186,11 +186,11 @@ paths:
 # complex objects have schema definitions
 definitions:
   AccountsResponse:
-    owners:
-      type: object
-      properties:
-        name:
-          type: string
+    required:
+      - message
+    properties:
+      message:
+        type: string
   ErrorResponse:
     required:
       - message
